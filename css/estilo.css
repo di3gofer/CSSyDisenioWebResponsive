@@ -1,25 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+body
+{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+}
+
+#contenido
+{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 header
 {
-  height: 60px;
-  padding: 10px 0 0 0;
+  height: 80px;
 	background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  order: 0;
+}
+
+header #titulo
+{
+  width: 50%;
+  float: left;
+}
+
+header #titulo h1
+{
+  margin-left: 5%;
+}
+
+header #menu
+{
+  width: 50%;
+  float: right;
+  padding-top: 3%;
+}
+header h1
+{
   text-align: left;
   text-shadow: 2px 2px 2px #02010a;
 	color: white;
-  border-radius: 10px 10px 0 0;
 }
 
-#columna1
+.item
 {
+  font-size: 23px;
+  text-decoration: none;
+  padding-left: 9%;
+  color: white;
+}
+
+section #img-principal
+{
+  width: 100%;
+  height: 400px;
   background-color: #82c3a6;
+  order: 2;
 }
 
-#columna2
+section #img-izquierda
 {
+  width: 50%;
+  height: 300px;
   background-color: #d5c75f;
+  float: left;
+  order: 3;
 }
 
-#columna3
+section #img-derecha
 {
+  width: 50%;
+  height: 300px;
   background-color: #d5c75f;
+  float: right;
+  order: 4;
+}
+
+#img-principal img
+{
+  height: 90%;
+  float: left;
+  margin: 2% 0 0 9%;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+#img-izquierda img
+{
+  height: 70%;
+  float: left;
+  margin: 5% 0 0 10%;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+#img-izquierda h2
+{
+  text-align: center;
+  padding-top: 50%
+}
+
+#img-derecha img
+{
+  height: 70%;
+  float: right;
+  margin: 5% 10% 0 0;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
+
+#img-derecha h2
+{
+  text-align: center;
+  padding-top: 50%
+}
+
+#contacto
+{
+  width: 20%;
+  float: left;
+  text-align: left;
+  padding-left: 5%;
+}
+
+#terminos
+{
+  width: 25%;
+  float: right;
+  text-align: left;
+}
+
+#redes
+{
+  width: 25%;
+  float: right;
+  text-align: left;
+}
+
+#redes img
+{
+  height: 15px;
+  border-radius: 10px;
+}
+
+#derechos
+{
+  width: 25%;
+  float: right;
+  text-align: left;
+}
+
+footer
+{
+  width: 100%;
+  height: 170px;
+  clear: both;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  order: 5;
+}
+
+@media screen{
+  #contenido{
+    width: 900px;
+  }
+}
+
+@media (max-width:900px){
+  #contenido{
+    width: 100%;
+  }
 }
