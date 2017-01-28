@@ -1,0 +1,25 @@
+header
+{
+  height: 60px;
+  padding: 10px 0 0 0;
+	background-color: #5b7989;
+  text-align: left;
+  text-shadow: 2px 2px 2px #02010a;
+	color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+#columna1
+{
+  background-color: #82c3a6;
+}
+
+#columna2
+{
+  background-color: #d5c75f;
+}
+
+#columna3
+{
+  background-color: #d5c75f;
+}
