@@ -39,6 +39,7 @@ header #menu
   float: right;
   padding-top: 3%;
 }
+
 header h1
 {
   text-align: left;
@@ -154,6 +155,35 @@ section #img-derecha
   text-align: left;
 }
 
+section #img-paisajes
+{
+  width: 100%;
+  height: 300px;
+  background-color: #d5c75f;
+}
+
+section #imagenes
+{
+  width: 100%;
+  height: 300px;
+  background-color: #d5c75f;
+}
+
+#imagenes #item
+{
+  width: 33.3%;
+  float: left;
+}
+
+#imagenes #item img
+{
+  height: 130px;
+  float: left;
+  margin: 13px 0 0 39px;
+  -webkit-box-shadow: 2px 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px 2px #02010a;
+}
+
 footer
 {
   width: 100%;
@@ -171,7 +201,82 @@ footer
 }
 
 @media (max-width:900px){
+  header{
+    height: 170px !important;
+    display: flex;
+    flex-direction: column;
+  }
+  header #titulo{
+    width: 100% !important;
+    float: none;
+    order: 0;
+  }
+  header #titulo h1{
+    text-align: center;
+  }
+  header #menu{
+    width: 100% !important;
+    float: none;
+    order: 1;
+  }
   #contenido{
     width: 100%;
+  }
+  #img-principal{
+    height: 230px !important;
+  }
+  #img-principal img{
+    height: 67% !important;
+    margin: 5% 0 0 5%;
+  }
+  #img-izquierda{
+    width: 100% !important;
+    float: none;
+  }
+  #img-derecha img{
+    height: 69% !important;
+    float: left !important;
+    margin: 5% 0 0 5% !important;
+  }
+  #img-izquierda img{
+    height: 65% !important;
+    margin: 5% 0 0 5% !important;
+  }
+  #img-derecha{
+    width: 100% !important;
+    float: none;
+  }
+  #contacto{
+    width: 100% !important;
+    order: 0;
+  }
+  #terminos{
+    width: 100% !important;
+    float: left;
+    padding-left: 5%;
+    order: 1;
+  }
+  #redes{
+    width: 100% !important;
+    float: left;
+    padding-left: 5%;
+    order: 2;
+  }
+  #derechos{
+    width: 100% !important;
+    float: left;
+    padding-left: 5%;
+    order: 3;
+  }
+  #imagenes{
+    height: 880px !important;
+  }
+  #imagenes #item{
+    width: 100%;
+  }
+  footer{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
   }
 }
